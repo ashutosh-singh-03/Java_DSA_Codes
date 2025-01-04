@@ -1,3 +1,5 @@
+import java.util.Scanner; //to take input
+
 public class firstProgram {
     public static void main(String[] args) {
         // Difference between print and println
@@ -37,5 +39,22 @@ public class firstProgram {
         double principal = 10000, rate = 5, time = 5;
         double interest = (principal * rate * time) / 100;
         System.out.println("Simple Interest: " + interest);
+
+        // Taking input using Scanner
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        int square = num * num;
+        System.out.println("The square of the number " + num + " is: " + square);
+
+        // Type Casting
+        System.out.print("Enter another number: ");
+        int num3 = sc.nextInt();
+        double num4 = (double) num3;
+        System.out.println(num4/2);
+
+        // Character input
+        char ch = sc.next().charAt(0);
+        System.out.println(ch);
     }
 }
