@@ -184,7 +184,8 @@ public class conditionals {
         int num_1 = sc.nextInt();
         System.out.print("Enter 2nd Number:");
         int num_2 = sc.nextInt();
-        System.out.println("Press + for addition.\nPress - for subtraction.\nPress * for Multiplication.\nPress / for division.");
+        System.out.println(
+                "Press + for addition.\nPress - for subtraction.\nPress * for Multiplication.\nPress / for division.");
 
         char choice = sc.next().charAt(0);
 
@@ -205,5 +206,7 @@ public class conditionals {
                 System.out.println("Choose correct option.");
                 break;
         }
+
+        sc.close();
     }
 }

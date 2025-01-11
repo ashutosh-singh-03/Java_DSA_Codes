@@ -51,10 +51,12 @@ public class firstProgram {
         System.out.print("Enter another number: ");
         int num3 = sc.nextInt();
         double num4 = (double) num3;
-        System.out.println(num4/2);
+        System.out.println(num4 / 2);
 
         // Character input
         char ch = sc.next().charAt(0);
         System.out.println(ch);
+
+        sc.close();
     }
 }
