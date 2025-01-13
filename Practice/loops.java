@@ -37,17 +37,13 @@ public class loops {
         System.out.println("Total Sum: " + sum1);
 
         // WAP to find the greatest common divisor of two numbers using a loop
-        
-
-        // WAP to check if the given string is palindrome or not
-        
 
         // WAP to generate and print the first 'n' terms of the fibonacci series
-        System.out.println("Enter the endpoint: ");
+        System.out.println("\nEnter the endpoint: ");
         int end = sc.nextInt();
 
         int firstTerm = 0, secondTerm = 1;
-        
+
         for (int l = 1; l <= end; l++) {
             System.out.print(firstTerm + " ");
             int nextTerm = firstTerm + secondTerm;
