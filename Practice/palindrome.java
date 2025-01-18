@@ -27,5 +27,7 @@ public class palindrome {
             System.out.print(input + " is a Palindrome.");
         else
             System.out.print(input + " is not a Palindrome.");
+
+        sc.close();
     }
 }

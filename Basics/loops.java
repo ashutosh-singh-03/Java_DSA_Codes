@@ -69,35 +69,6 @@ public class loops {
             System.out.print(firstTerm + " ");
             firstTerm *= r;
         }
-
-        // use of break keyword
-        // Finding if the number is composite or not
-        System.out.print("\nEnter any number: ");
-        int num = sc.nextInt();
-
-        for (int i = 2; i < num - 1; i++) {
-            if (num % i == 0) {
-                System.out.println(num + " is Composite.");
-                break;
-            } else{
-                System.out.println(num + " is Prime.");
-                break;
-            }
-        }
-
-        // Checking if number is prime or not
-        System.out.print("\nEnter a number: ");
-        int number = sc.nextInt();
-
-        boolean isPrime = true;
-        for(int i = 2; i <= num - 1; i++){
-            if(number % i == 0){
-                System.out.println(number + " is Composite.");
-                isPrime = false;
-                break;
-            }
-        }
-        if(isPrime == true) System.out.println(number + " is Prime.");
         sc.close();
     }
 }
