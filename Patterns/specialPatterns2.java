@@ -13,8 +13,21 @@ public class specialPatterns2 {
         int mid = (1 + rows) / 2;
         for (int i = 1; i <= rows; i++) {
             for (int j = 1; j <= rows; j++) {
-                if(i == mid || j == mid) System.out.print("* ");
-                else System.out.print("  ");
+                if (i == mid || j == mid)
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");
+            }
+            System.out.println();
+        }
+
+        // Printing Cross X
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= rows; j++) {
+                if (i == j || (i + j) == (1 + rows))
+                    System.out.print("* ");
+                else
+                    System.out.print("  ");
             }
             System.out.println();
         }
