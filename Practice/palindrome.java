@@ -23,7 +23,7 @@ public class palindrome {
             right--;
         }
 
-        if (isPalindrome == true)
+        if (isPalindrome)
             System.out.print(input + " is a Palindrome.");
         else
             System.out.print(input + " is not a Palindrome.");
