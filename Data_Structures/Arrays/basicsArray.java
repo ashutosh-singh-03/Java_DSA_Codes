@@ -7,6 +7,7 @@ public class basicsArray {
         // Declaration
         int[] arr1;
         int arr2[];
+        int arr4[] = { 1, 2, 3, 4, 5 };
 
         // defining size
         arr1 = new int[5];
