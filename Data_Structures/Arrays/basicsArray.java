@@ -4,29 +4,21 @@ import java.util.Scanner;
 
 public class basicsArray {
     public static void main(String[] args) {
-        // Declaration
-        int[] arr1;
-        int arr2[];
-        int arr4[] = { 1, 2, 3, 4, 5 };
-
-        // defining size
-        arr1 = new int[5];
-        arr2 = new int[5];
-        int arr3[] = new int[5];
+        int[] arr1 = new int[5]; //declaration and memory allocation
 
         // Initialization
-        arr3[0] = 1;
-        arr3[1] = 2;
-        arr3[2] = 3;
-        arr3[3] = 4;
-        arr3[4] = 5;
+        arr1[0] = 1;
+        arr1[1] = 2;
+        arr1[2] = 3;
+        arr1[3] = 4;
+        arr1[4] = 5;
 
         // Printing Array
-        System.out.print(arr3[0] + " ");
-        System.out.print(arr3[1] + " ");
-        System.out.print(arr3[2] + " ");
-        System.out.print(arr3[3] + " ");
-        System.out.print(arr3[4] + " ");
+        System.out.print(arr1[0] + " ");
+        System.out.print(arr1[1] + " ");
+        System.out.print(arr1[2] + " ");
+        System.out.print(arr1[3] + " ");
+        System.out.print(arr1[4] + " ");
         System.out.println();
 
         // Using Loops for input and output
