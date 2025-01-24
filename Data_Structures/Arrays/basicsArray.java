@@ -1,10 +1,8 @@
-package Data_Structures.Arrays;
-
 import java.util.Scanner;
 
 public class basicsArray {
     public static void main(String[] args) {
-        int[] arr1 = new int[5]; //declaration and memory allocation
+        int[] arr1 = new int[5]; // declaration and memory allocation
 
         // Initialization
         arr1[0] = 1;

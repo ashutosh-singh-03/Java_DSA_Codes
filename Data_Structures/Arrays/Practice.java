@@ -1,5 +1,3 @@
-package Data_Structures.Arrays;
-
 import java.util.Scanner;
 
 public class Practice {
