@@ -1,3 +1,5 @@
+package Arrays;
+
 import java.util.Scanner;
 
 public class Practice {
@@ -8,7 +10,6 @@ public class Practice {
             System.out.print("Enter element " + i + ": ");
             arr[i] = sc.nextInt();
         }
-
         return arr;
     }
 
