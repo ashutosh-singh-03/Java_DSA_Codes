@@ -43,6 +43,11 @@ public class basicsArray {
         }
         System.out.println("]");
 
+        // Printing Array with for-each loop
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+
         sc.close();
     }
 }
