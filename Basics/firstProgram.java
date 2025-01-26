@@ -1,3 +1,5 @@
+package Basics;
+
 import java.util.Scanner; //to take input
 
 public class firstProgram {
