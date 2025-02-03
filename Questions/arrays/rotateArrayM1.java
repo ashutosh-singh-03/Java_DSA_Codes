@@ -3,7 +3,7 @@ package Questions.arrays;
 import java.util.Scanner;
 
 public class rotateArrayM1 {
-    public static int[] rotate(int[] arr, int k) {
+    public static void rotate(int[] arr, int k) {
         int n = arr.length;
         k = k % n; // to handle cases where n < k
         int[] temp = new int[n];
@@ -18,7 +18,10 @@ public class rotateArrayM1 {
             temp[i] = arr[i - k];
         }
 
-        return temp;
+        // copying back to arr
+        for (int i = 0; i < n; i++) {
+            arr[i] = temp[i];
+        }
     }
 
     public static void main(String[] args) {
@@ -27,9 +30,9 @@ public class rotateArrayM1 {
         System.out.print("Enter the number of rotations: ");
         int k = sc.nextInt();
 
-        int[] temp = rotate(arr, k);
+        rotate(arr, k);
 
-        for (int i : temp) {
+        for (int i : arr) {
             System.out.print(i + " ");
         }
         sc.close();
