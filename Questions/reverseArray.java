@@ -1,4 +1,4 @@
-package Arrays.Questions;
+package Questions;
 
 public class reverseArray {
     public static void main(String[] args) {
