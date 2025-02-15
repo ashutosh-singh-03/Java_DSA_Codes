@@ -1,4 +1,4 @@
-package Patterns;
+package Patterns.Composite_Patterns;
 
 public class starDiamond {
     public static void main(String[] args) {
