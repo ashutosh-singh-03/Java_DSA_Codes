@@ -1,14 +1,16 @@
 package Questions.arrays;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class linearSearch {
-    public static int[] inputArray(int size) {
-        Scanner sc = new Scanner(System.in);
+
+    // Function to take input for an array
+    public static int[] inputArray(int size, Scanner sc) {
         int[] arr = new int[size];
 
+        System.out.println("Enter the elements of the array:");
         for (int i = 0; i < size; i++) {
-            System.out.print("Enter element " + i + ": ");
+            System.out.print("Element " + (i + 1) + ": ");
             arr[i] = sc.nextInt();
         }
 
@@ -18,21 +20,19 @@ public class linearSearch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Taking input for the size of the array
+        // -------------------- Input Array --------------------
         System.out.print("Enter the size of the array: ");
         int size = sc.nextInt();
 
-        // Taking input for the elements of the array
-        System.out.println("Enter the elements of the array: ");
-        int[] arr = inputArray(size);
+        int[] arr = inputArray(size, sc);
 
-        // Searching for an element in the array
-        System.out.print("Enter the element to find: ");
-        int x = sc.nextInt();
+        // -------------------- Linear Search --------------------
+        System.out.print("\nEnter the element to find: ");
+        int target = sc.nextInt();
 
-        int index = -1; // Initializing index to -1 to handle the case if element is not found
+        int index = -1; // Initialize index to -1 to handle the case if the element is not found
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == x) {
+            if (arr[i] == target) {
                 index = i;
                 break;
             }
@@ -41,36 +41,36 @@ public class linearSearch {
         if (index == -1) {
             System.out.println("Element not found.");
         } else {
-            System.out.println(x + " is at index: " + index);
+            System.out.println(target + " is at index: " + index);
         }
 
-        // Finding the maximum value in the array
-        int max = arr[0];
-        for (int i = 1; i < arr.length; i++) {
-            max = Math.max(max, arr[i]);
-        }
-        System.out.println("\nMax value in the array is: " + max);
+        // -------------------- Finding Maximum & Second Maximum --------------------
+        int max = Integer.MIN_VALUE;
+        int secondMax = Integer.MIN_VALUE;
 
-        // Finding the second maximum value in the array
-        int secMax = Integer.MIN_VALUE;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] != max) {
-                secMax = Math.max(secMax, arr[i]);
+        for (int num : arr) {
+            if (num > max) {
+                secondMax = max;
+                max = num;
+            } else if (num > secondMax && num != max) {
+                secondMax = num;
             }
         }
-        if (secMax == Integer.MIN_VALUE) {
-            System.out.println("\nSecond Max value does not exist.");
+
+        System.out.println("\nMax value in the array is: " + max);
+        if (secondMax == Integer.MIN_VALUE) {
+            System.out.println("Second Max value does not exist.");
         } else {
-            System.out.println("\nSecond Max value in the array is: " + secMax);
+            System.out.println("Second Max value in the array is: " + secondMax);
         }
 
-        // Finding the minimum value in the array
+        // -------------------- Finding Minimum Value --------------------
         int min = arr[0];
         for (int i = 1; i < arr.length; i++) {
             min = Math.min(min, arr[i]);
         }
         System.out.println("\nMin value in the array is: " + min);
 
-        sc.close();
+        sc.close(); // Close Scanner to prevent resource leaks
     }
 }

@@ -5,56 +5,59 @@ public class sortArray01 {
         int[] arr = { 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1 };
         int n = arr.length;
 
-        // Method 1
+        // -------------------- Method 1: Counting Approach --------------------
         int ones = 0, zeros = 0;
 
-        for (int i = 0; i < n; i++) {
-            if (arr[i] == 0)
+        // Count number of 0s and 1s
+        for (int num : arr) {
+            if (num == 0)
                 zeros++;
             else
                 ones++;
         }
 
+        // Overwrite the array based on count
         for (int i = 0; i < n; i++) {
-            if (i < zeros)
-                arr[i] = 0;
-            else
-                arr[i] = 1;
+            arr[i] = (i < zeros) ? 0 : 1;
         }
 
-        System.out.println("Method 1");
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
+        // Print sorted array (Method 1)
+        System.out.println("Method 1 (Counting Approach):");
+        printArray(arr);
 
-        // method 2
+        // -------------------- Method 2: Two Pointer Approach --------------------
         int[] arr1 = { 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1 };
-        int m = arr1.length;
+        int left = 0, right = arr1.length - 1;
 
-        int i = 0, j = m - 1;
-
-        while (i < j) {
-            // If left is 0, move i forward
-            if (arr1[i] == 0) {
-                i++;
+        while (left < right) {
+            // If left is already 0, move left pointer forward
+            if (arr1[left] == 0) {
+                left++;
             }
-            // If right is 1, move j backward
-            else if (arr1[j] == 1) {
-                j--;
+            // If right is already 1, move right pointer backward
+            else if (arr1[right] == 1) {
+                right--;
             }
-            // If left is 1 and right is 0, swap
+            // Swap when left is 1 and right is 0
             else {
-                int temp = arr1[i];
-                arr1[i] = arr1[j];
-                arr1[j] = temp;
-                i++;
-                j--;
+                int temp = arr1[left];
+                arr1[left] = arr1[right];
+                arr1[right] = temp;
+                left++;
+                right--;
             }
         }
 
-        System.out.println("\nMethod 2");
-        for (int k : arr1) {
-            System.out.print(k + " ");
+        // Print sorted array (Method 2)
+        System.out.println("\nMethod 2 (Two Pointer Approach):");
+        printArray(arr1);
+    }
+
+    // Utility function to print an array
+    public static void printArray(int[] arr) {
+        for (int num : arr) {
+            System.out.print(num + " ");
         }
+        System.out.println();
     }
 }
