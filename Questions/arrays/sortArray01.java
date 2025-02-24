@@ -6,14 +6,14 @@ public class sortArray01 {
         int n = arr.length;
 
         // -------------------- Method 1: Counting Approach --------------------
-        int ones = 0, zeros = 0;
+        int zeros = 0;
 
         // Count number of 0s and 1s
         for (int num : arr) {
             if (num == 0)
                 zeros++;
-            else
-                ones++;
+            else {
+            }
         }
 
         // Overwrite the array based on count
