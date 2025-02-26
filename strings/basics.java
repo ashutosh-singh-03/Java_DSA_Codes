@@ -28,5 +28,7 @@ public class basics {
         // charAt() and length()
         System.out.println("\nFirst Letter: " + name.charAt(0));
         System.out.println("Length of name: " + name.length());
+
+        sc.close();
     }
 }
