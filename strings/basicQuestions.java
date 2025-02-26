@@ -25,6 +25,16 @@ public class basicQuestions {
             }
             System.out.println();
         }
+
+        // 3. Take integer input and convert it to a string
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+        String converted_string = "" + n;
+        System.out.println("Converted String: " + converted_string);
+
+        // 4. Return total number of digits in a number without using a loop
+        String count = Integer.toString(n);
+        System.out.print("Number of digits: " + count.length());
         sc.close();
     }
 
