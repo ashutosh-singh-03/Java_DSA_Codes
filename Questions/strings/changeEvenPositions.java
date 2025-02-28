@@ -1,5 +1,3 @@
-package Questions.strings;
-
 import java.util.Scanner;
 
 public class changeEvenPositions {
