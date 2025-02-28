@@ -23,8 +23,9 @@ public class reverseWordsOfSentence {
                 j++;
             else {
                 reverse(sentence, i, j - 1);
-                i = j + 1;
-                j = i;
+                while (j < n && sentence.charAt(j) == ' ')
+                    j++; // to handle multiple spaces
+                i = j;
             }
         }
         reverse(sentence, i, j - 1); // for last word
