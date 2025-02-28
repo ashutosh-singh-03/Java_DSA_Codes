@@ -15,5 +15,7 @@ public class stringBuilder {
         // setCharAt()
         str.setCharAt(1, 'z');
         System.out.println(str);
+
+        sc.close();
     }
 }
