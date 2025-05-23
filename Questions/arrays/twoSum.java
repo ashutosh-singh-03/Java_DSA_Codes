@@ -20,7 +20,7 @@ public class twoSum {
             }
         }
 
-        // for printing only one pair with thier indices
+        // for printing only one pair with their indices
         int ele1 = 0, ele2 = 0;
         for (int i = 0; i < arr.length; i++) {
             boolean flag = false;
