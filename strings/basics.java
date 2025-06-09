@@ -31,11 +31,11 @@ public class basics {
 
         // indexOf(), lastIndexOf(), compareTo()
         System.out.print("\nIndex of S: " + fullName.indexOf('A'));
-        System.out.print("\nFirst Occurence of s: " + name.indexOf('s'));
+        System.out.print("\nFirst Occurrence of s: " + name.indexOf('s'));
         System.out.print("\nIndex of S: " + name.lastIndexOf('s'));
 
         System.out.println("Using compareTo() function: ");
-        // different comparisions
+        // different comparisons
         // same strings
         String s1 = "abc";
         String s2 = "abc";

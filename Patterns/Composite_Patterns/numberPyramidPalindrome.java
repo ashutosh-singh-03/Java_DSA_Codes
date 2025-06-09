@@ -2,7 +2,7 @@ package Patterns.Composite_Patterns;
 
 import java.util.Scanner;
 
-public class numberPyramidPallindrome {
+public class numberPyramidPalindrome {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter n: ");

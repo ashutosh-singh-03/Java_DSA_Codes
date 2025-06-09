@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class sortString {
     public static void main(String[] args) {
-        // Strings have no funtion to directly sort, we can convert them to char array
+        // Strings have no function to directly sort, we can convert them to char array
         // then use the sort method
         String input = "Ashutosh";
         char[] ch = input.toCharArray();

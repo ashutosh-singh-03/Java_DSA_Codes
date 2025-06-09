@@ -14,7 +14,7 @@ public class firstProgram {
         x = 6; // initialization
         System.out.println(x);
 
-        // Variable Value Updation
+        // Updating variable value
         int y = 6;
         System.out.println(y);
         y = y + 90;

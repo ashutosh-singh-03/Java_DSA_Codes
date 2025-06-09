@@ -17,7 +17,7 @@ public class changeEvenPositions {
                 ans += ch;
         }
         System.out.print("Original String: " + str);
-        System.out.print("\nEditted String: " + ans);
+        System.out.print("\nEdited String: " + ans);
 
         sc.close();
     }

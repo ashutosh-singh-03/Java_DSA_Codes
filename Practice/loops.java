@@ -26,7 +26,7 @@ public class loops {
         }
         System.out.println("\nSum of the digits: " + sum);
 
-        // WAP to find the sum of the natural numbers upto given positive integer n
+        // WAP to find the sum of the natural numbers up to given positive integer n
         System.out.print("Enter a positive integer: ");
         int n = sc.nextInt();
 

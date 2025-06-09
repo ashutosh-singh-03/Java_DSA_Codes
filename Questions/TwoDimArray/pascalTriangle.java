@@ -21,7 +21,7 @@ public class pascalTriangle {
             arr.add(l);
         }
 
-        // OR - craeting another loop for replacing the 1's
+        // OR - creating another loop for replacing the 1's
         // for (int i = 2; i < n; i++) {
         // for (int j = 1; j <= i - 1; j++) {
         // arr.get(i).set(j, arr.get(i - 1).get(j) + arr.get(i - 1).get(j - 1));

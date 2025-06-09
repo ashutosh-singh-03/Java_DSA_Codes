@@ -19,7 +19,7 @@ public class isomorphicString {
     public static void main(String[] args) {
         // 205
         String str1 = "paper";
-        String str2 = "titsle";
+        String str2 = "title";
 
         boolean flag = isIsomorphic(str1, str2);
 
