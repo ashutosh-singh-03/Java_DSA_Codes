@@ -1,4 +1,4 @@
-package Questions;
+package Recursion_Basics;
 
 public class multiplication {
     static int multiply(int a, int b) { // O(b) complexity

@@ -1,4 +1,4 @@
-package Questions;
+package Recursion_Basics;
 
 public class recursionProblems3 {
     public static void multiples(int num, int k) {

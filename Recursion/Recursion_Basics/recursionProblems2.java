@@ -1,4 +1,4 @@
-package Questions;
+package Recursion_Basics;
 
 public class recursionProblems2 {
     public static int sumOfDigits(int n) {

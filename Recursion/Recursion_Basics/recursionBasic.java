@@ -1,3 +1,5 @@
+package Recursion_Basics;
+
 public class recursionBasic {
     public static void printIncreasing(int n) {
         if (n == 1) {

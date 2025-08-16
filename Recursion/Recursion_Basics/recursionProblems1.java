@@ -1,4 +1,4 @@
-package Questions;
+package Recursion_Basics;
 
 public class recursionProblems1 {
     public static int factorial(int n) {
