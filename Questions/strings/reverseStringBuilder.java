@@ -1,4 +1,5 @@
 package Questions.Strings;
+
 import java.util.Scanner;
 
 public class reverseStringBuilder {
@@ -24,7 +25,7 @@ public class reverseStringBuilder {
         System.out.println("Original String: " + input);
         System.out.print("Reverse String: ");
         Reverse(input);
-        
+
         // With InBuilt Function
         StringBuilder sb = new StringBuilder(input);
         System.out.println("With Inbuilt function: " + sb.reverse());

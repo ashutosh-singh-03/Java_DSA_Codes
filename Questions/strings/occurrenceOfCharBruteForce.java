@@ -1,4 +1,5 @@
 package Questions.Strings;
+
 import java.util.Scanner;
 
 public class occurrenceOfCharBruteForce {
@@ -12,13 +13,14 @@ public class occurrenceOfCharBruteForce {
 
         char[] ch = input.toCharArray();
 
-        for(int i = 0; i < ch.length; i++){
+        for (int i = 0; i < ch.length; i++) {
             int count = 0;
             for (int j = 0; j < ch.length; j++) {
-                if(ch[i] == ch[j]) count++;
+                if (ch[i] == ch[j])
+                    count++;
             }
 
-            if(count > countMax){
+            if (count > countMax) {
                 countMax = count;
                 charMax = ch[i];
             }

@@ -1,4 +1,5 @@
 package Questions.Strings;
+
 import java.util.Arrays;
 
 public class sortString {
@@ -13,9 +14,9 @@ public class sortString {
             System.out.print(c);
         }
         System.out.println();
-        
+
         Arrays.sort(ch);
-        
+
         System.out.print("Sorted String: ");
         for (char c : ch) {
             System.out.print(c);
