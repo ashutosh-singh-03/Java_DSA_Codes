@@ -16,8 +16,8 @@ public class basicsArray {
 
         // Printing the array using a loop
         System.out.print("Array elements: ");
-        for (int i = 0; i < arr1.length; i++) {
-            System.out.print(arr1[i] + " ");
+        for (int num : arr1) {
+            System.out.print(num + " ");
         }
         System.out.println();
 

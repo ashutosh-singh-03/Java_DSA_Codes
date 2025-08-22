@@ -1,8 +1,11 @@
+package Questions.Strings;
+
 import java.util.Scanner;
 
 public class occurrenceOfChar {
     public static void main(String[] args) {
-        // Ps - Print the character of the lowercase English alphabet String, with most frequency
+        // Ps - Print the character of the lowercase English alphabet String, with most
+        // frequency
         // We can solve this by using a frequency array
 
         Scanner sc = new Scanner(System.in);
@@ -17,11 +20,11 @@ public class occurrenceOfChar {
             freq[idx]++;
         }
         int maxFreq = -1;
-        for (int i = 0; i < freq.length; i++) {
-            maxFreq = Math.max(maxFreq, freq[i]);
+        for (int f : freq) {
+            maxFreq = Math.max(maxFreq, f);
         }
         System.out.print("Max Frequency: " + maxFreq);
-        
+
         System.out.print("\nCharacter(s) Occurred Most: ");
         for (int i = 0; i < freq.length; i++) {
             if (freq[i] == maxFreq) {

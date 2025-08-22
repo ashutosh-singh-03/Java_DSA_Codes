@@ -28,8 +28,8 @@ public class pascalTriangle {
         // }
         // }
 
-        for (int i = 0; i < arr.size(); i++) {
-            System.out.println(arr.get(i));
+        for (List<Integer> row : arr) {
+            System.out.println(row);
         }
 
         sc.close();

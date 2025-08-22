@@ -1,3 +1,4 @@
+package Questions.Strings;
 import java.util.Scanner;
 
 public class toggleCharactersSB {

@@ -1,5 +1,5 @@
 // Dutch Flag Algorithm
-package Questions.arrays;
+package Questions.Arrays;
 
 public class sortColors {
     public static void main(String[] args) {

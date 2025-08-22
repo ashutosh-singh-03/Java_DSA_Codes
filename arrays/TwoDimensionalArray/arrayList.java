@@ -23,20 +23,19 @@ public class arrayList {
 
         // Printing the arraylist
         System.out.println("Printing Using Single Loop: ");
-        for (int i = 0; i < arr.size(); i++) {
-            System.out.println(arr.get(i));
+        for (List<Integer> list : arr) {
+            System.out.println(list);
         }
-        
+
         // Getting specific element
         System.out.println("Getting Individual Element: ");
         System.out.println(arr.get(1).get(1));
-        
+
         // using loop for printing
         System.out.println("Printing Using Nested Loop: ");
-        for (int i = 0; i < arr.size(); i++) {
-            List<Integer> x = arr.get(i);
-            for (int j = 0; j < x.size(); j++) {
-                System.out.print(x.get(j) + " ");
+        for (List<Integer> x : arr) {
+            for (Integer num : x) {
+            System.out.print(num + " ");
             }
             System.out.println();
         }

@@ -1,3 +1,4 @@
+package Questions.Strings;
 // PS - Given n string array, consisting of digits (0 - 9), return the string with max value.
 public class maxIntString {
     public static String max(String a, String b) {
