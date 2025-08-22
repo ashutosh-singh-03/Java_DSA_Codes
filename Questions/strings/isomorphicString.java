@@ -50,7 +50,7 @@ public class isomorphicString {
         } else {
             boolean flag = isIsomorphic(str1, str2);
 
-            if (flag == false)
+            if (!flag)
                 System.out.println("Strings are not isomorphic.");
             else
                 System.out.println("Strings are isomorphic.");

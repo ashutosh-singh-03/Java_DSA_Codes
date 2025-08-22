@@ -12,7 +12,7 @@ public class basicQuestions {
         // 1. Count all the number of vowels from a string
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if (isVowel(ch) == true)
+            if (isVowel(ch))
                 countVowel++;
         }
         System.out.println("\nTotal Vowels: " + countVowel);

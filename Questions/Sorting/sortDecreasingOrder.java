@@ -25,7 +25,7 @@ public class sortDecreasingOrder {
                     flag = false;
                 }
             }
-            if (flag == true)
+            if (flag)
                 break;
         }
 
