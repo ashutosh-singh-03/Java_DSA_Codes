@@ -29,12 +29,12 @@ public class firstProgram {
 
         // Area of Circle
         double radius = 5.0;
-        double area = 3.14 * radius * radius;
+        double area = Math.PI * radius * radius;
         System.out.println("Area of the circle of radius" + radius + "is: " + area);
 
         // Volume of Sphere
         double rad = 5;
-        double volume = (4 * 3.14 * rad * rad * rad) / 3;
+        double volume = (4 * Math.PI * rad * rad * rad) / 3;
         System.out.println("The volume of the sphere of radius " + rad + " is: " + volume);
 
         // Simple Interest
