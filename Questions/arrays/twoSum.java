@@ -32,7 +32,7 @@ public class twoSum {
                     break;
                 }
             }
-            if(flag == true) break;
+            if(flag) break;
         }
         System.out.println("The elements at " + ele1 + " and " + ele2 + " form " + target);
         sc.close();

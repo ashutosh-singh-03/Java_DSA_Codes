@@ -27,7 +27,7 @@ public class optimizedBubbleSort {
                     flag = false;
                 }
             }
-            if (flag == true)
+            if (flag)
                 break;
         }
         System.out.println("Sorted Array: ");
