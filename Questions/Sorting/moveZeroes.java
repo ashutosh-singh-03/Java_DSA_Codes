@@ -24,8 +24,10 @@ public class moveZeroes {
             nums.add(0);
         }
 
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = nums.get(i);
+        int index = 0;
+        for (int element : nums) {
+            arr[index] = element;
+            index++;
         }
     }
 

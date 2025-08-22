@@ -17,8 +17,8 @@ public class occurrenceOfChar {
             freq[idx]++;
         }
         int maxFreq = -1;
-        for (int i = 0; i < freq.length; i++) {
-            maxFreq = Math.max(maxFreq, freq[i]);
+        for (int frequency : freq) {
+            maxFreq = Math.max(maxFreq, frequency);
         }
         System.out.print("Max Frequency: " + maxFreq);
         

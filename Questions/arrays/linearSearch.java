@@ -66,8 +66,10 @@ public class linearSearch {
 
         // -------------------- Finding Minimum Value --------------------
         int min = arr[0];
-        for (int i = 1; i < arr.length; i++) {
-            min = Math.min(min, arr[i]);
+        for (int element : arr) {
+            if (element < min) {
+                min = element;
+            }
         }
         System.out.println("\nMin value in the array is: " + min);
 

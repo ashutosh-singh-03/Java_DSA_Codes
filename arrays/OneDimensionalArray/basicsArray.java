@@ -16,8 +16,8 @@ public class basicsArray {
 
         // Printing the array using a loop
         System.out.print("Array elements: ");
-        for (int i = 0; i < arr1.length; i++) {
-            System.out.print(arr1[i] + " ");
+        for (int element : arr1) {
+            System.out.print(element + " ");
         }
         System.out.println();
 
@@ -38,8 +38,8 @@ public class basicsArray {
         // Printing the user-defined array
         System.out.println();
         System.out.print("Entered Array is: [ ");
-        for (int i = 0; i < size; i++) {
-            System.out.print(arr[i] + " ");
+        for (int element : arr) {
+            System.out.print(element + " ");
         }
         System.out.println("]");
 
