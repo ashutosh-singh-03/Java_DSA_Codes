@@ -25,9 +25,9 @@ public class reverseOfString {
 
         String rev = reverseStringNoIdx(s);
         if (rev.equals(s))
-            System.out.print("String is Palindrome.");
+            System.out.printf("%s is Palindrome.", s);
         else
-            System.out.print("String is not Palindrome.");
+            System.out.printf("%s is not Palindrome.", s);
 
         sc.close();
     }
