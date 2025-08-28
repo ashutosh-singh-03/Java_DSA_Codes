@@ -1,8 +1,6 @@
-package Practice;
-
 import java.util.*;
 
-public class palindrome {
+public class isPalindromeString {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
