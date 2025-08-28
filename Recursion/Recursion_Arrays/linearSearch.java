@@ -38,6 +38,26 @@ public class linearSearch {
         return ans;
     }
 
+    static int findLastIndexForward(int[] arr, int idx, int target) {
+        if (idx == arr.length)
+            return -1;
+
+        int result = findLastIndexForward(arr, idx + 1, target);
+        if (result != -1)
+            return result;
+        if (arr[idx] == target)
+            return idx;
+        return -1;
+    }
+
+    static int findLastIndexBackward(int[] arr, int idx, int target) {
+        if (idx < 0)
+            return -1;
+        if (arr[idx] == target)
+            return idx;
+        return findLastIndexBackward(arr, idx - 1, target);
+    }
+
     public static void main(String[] args) {
         int[] a = { 1, 2, 3, 4, 5, 4, 4, 4 };
         int target = 4;
@@ -49,5 +69,8 @@ public class linearSearch {
         System.out.print("\nUsing Array List: ");
         ArrayList<Integer> ans = findAllIndices(a, 0, target);
         System.out.print(ans);
+
+        System.out.print("\nLast Index Using Forward Approach: " + findLastIndexForward(a, 0, target));
+        System.out.print("\nLast Index Using Backward Approach: " + findLastIndexBackward(a, a.length - 1, target));
     }
 }
