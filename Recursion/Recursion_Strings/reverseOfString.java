@@ -1,5 +1,7 @@
 package Recursion_Strings;
 
+import java.util.Scanner;
+
 public class reverseOfString {
     static String reverseString(String s, int idx) {
         if (idx == s.length())
@@ -14,8 +16,19 @@ public class reverseOfString {
     }
 
     public static void main(String[] args) {
-        String s = "abcd";
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a String: ");
+        String s = sc.nextLine();
+
         System.out.println("Reverse: " + reverseString(s, 0));
         System.out.println("Reverse No Idx: " + reverseStringNoIdx(s));
+
+        String rev = reverseStringNoIdx(s);
+        if (rev.equals(s))
+            System.out.print("String is Palindrome.");
+        else
+            System.out.print("String is not Palindrome.");
+
+        sc.close();
     }
 }
