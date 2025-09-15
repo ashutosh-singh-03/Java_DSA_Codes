@@ -1,3 +1,4 @@
+package Sorting;
 public class checkSortedArray {
     static boolean sortedM1(int[] arr) {
         boolean isSorted = true;

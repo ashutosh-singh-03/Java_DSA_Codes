@@ -1,3 +1,4 @@
+package Sorting;
 public class optimizedBubbleSort {
     public static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
