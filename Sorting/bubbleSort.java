@@ -12,17 +12,7 @@ public class bubbleSort {
         System.out.println();
     }
 
-    static void bubbleMethod1(int[] arr) {
-        // One Pass Approach - not always gives the sorted array
-        for (int i = 0; i < arr.length - 1; i++) {
-            if (arr[i] > arr[i + 1])
-                swap(arr, i, i + 1);
-        }
-        System.out.println("Sorted Array Method 1: ");
-        printArr(arr);
-    }
-
-    static void bubbleMethod2(int[] arr) {
+    static void bubbleBruteForce(int[] arr) {
         // n - 1 passes approach, where n is the size of the array
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
@@ -57,8 +47,7 @@ public class bubbleSort {
         System.out.println("Original Array: ");
         printArr(arr);
 
-        bubbleMethod1(arr);
-        bubbleMethod2(arr);
+        bubbleBruteForce(arr);
         bubbleOptimized(arr);
     }
 }
