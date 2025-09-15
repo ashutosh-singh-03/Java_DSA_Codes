@@ -1,4 +1,4 @@
-package arrays.TwoDimensionalArray;
+package Arrays.TwoDimensionalArray;
 
 import java.util.*;
 

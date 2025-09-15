@@ -1,20 +1,20 @@
-package Patterns.Special_Patterns;
+package Patterns.SpecialPatterns;
 
 import java.util.Scanner;
 
-public class binaryRightTriangle {
+public class crossStar {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of rows: ");
         int rows = sc.nextInt();
 
-        System.out.println("\nBinary Right Triangle:");
+        System.out.println("\nCross (X):");
         for (int i = 1; i <= rows; i++) {
-            for (int j = 1; j <= i; j++) {
-                if ((i + j) % 2 == 0)
-                    System.out.print("1 ");
+            for (int j = 1; j <= rows; j++) {
+                if (i == j || (i + j) == (1 + rows))
+                    System.out.print("* ");
                 else
-                    System.out.print("0 ");
+                    System.out.print("  ");
             }
             System.out.println();
         }

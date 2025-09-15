@@ -1,4 +1,4 @@
-package Patterns.Composite_Patterns;
+package Patterns.CompositePatterns;
 
 import java.util.Scanner;
 
