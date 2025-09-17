@@ -1,4 +1,5 @@
 package Sorting;
+
 public class bubbleSort {
     public static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
@@ -13,10 +14,10 @@ public class bubbleSort {
         System.out.println();
     }
 
-    static void bubbleBruteForce(int[] arr) {
+    static void bubbleBruteForce(int[] arr, int n) {
         // n - 1 passes approach, where n is the size of the array
-        for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - 1; j++) {
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - 1; j++) {
                 if (arr[j] > arr[j + 1])
                     swap(arr, j, j + 1);
             }
@@ -25,10 +26,10 @@ public class bubbleSort {
         printArr(arr);
     }
 
-    static void bubbleOptimized(int[] arr) {
-        for (int i = 0; i < arr.length - 1; i++) {
+    static void bubbleOptimized(int[] arr, int n) {
+        for (int i = 0; i < n - 1; i++) {
             boolean swapped = false;
-            for (int j = 0; j < arr.length - 1 - i; j++) { // after each pass, comparisons are getting reduced
+            for (int j = 0; j < n - 1 - i; j++) { // after each pass, comparisons are getting reduced
                 if (arr[j] > arr[j + 1]) {
                     swap(arr, j, j + 1);
                     swapped = true;
@@ -43,12 +44,13 @@ public class bubbleSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 5, 4, 3, 2, 1 };
+        int[] arr = {5, 4, 3, 2, 1};
+        int n = arr.length;
 
         System.out.println("Original Array: ");
         printArr(arr);
 
-        bubbleBruteForce(arr);
-        bubbleOptimized(arr);
+        bubbleBruteForce(arr, n);
+        bubbleOptimized(arr, n);
     }
 }

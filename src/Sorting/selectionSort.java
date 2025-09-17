@@ -14,25 +14,41 @@ public class selectionSort {
         System.out.println();
     }
 
-    public static void selectionSorting(int[] arr) {
-        int n = arr.length;
+    public static void selectionSortingSmallFirst(int[] arr, int n) {
         for (int i = 0; i < n - 1; i++) {
             int min = Integer.MAX_VALUE, minIdx = -1;
             for (int j = i; j < n; j++) {
-                if (arr[j] < min) {
-                    min = arr[j];
-                    minIdx = j;
-                }
+                if (arr[j] < min) minIdx = j;
             }
             swap(arr, i, minIdx);
         }
     }
 
+    public static void selectionSortingLargeFirst(int[] arr, int n) {
+        for (int i = n - 1; i > 0; i--) {
+            int max = Integer.MIN_VALUE, maxIdx = -1;
+            for (int j = 0; j <= i; j++) {
+                if (arr[j] > max) {
+                    max = arr[j];
+                    maxIdx = j;
+                }
+            }
+            swap(arr, i, maxIdx);
+        }
+    }
+
     public static void main(String[] args) {
         int[] arr = {4, 5, 13, 2, 1};
+        int n = arr.length;
+
         System.out.println("Original Array: ");
         print(arr);
-        selectionSorting(arr);
+
+        selectionSortingSmallFirst(arr, n);
+        System.out.println("Sorted Array: ");
+        print(arr);
+
+        selectionSortingLargeFirst(arr, n);
         System.out.println("Sorted Array: ");
         print(arr);
     }
