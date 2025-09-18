@@ -29,7 +29,6 @@ public class selectionSort {
             int max = Integer.MIN_VALUE, maxIdx = -1;
             for (int j = 0; j <= i; j++) {
                 if (arr[j] > max) {
-                    max = arr[j];
                     maxIdx = j;
                 }
             }
