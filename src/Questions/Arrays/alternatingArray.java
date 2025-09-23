@@ -1,6 +1,7 @@
-package Practice.CoddyQuestions;
+package Questions.Arrays;
 
-// Write a function named alternate that gets two arrays of integers and returns an array that is a combination of the arrays alternating.
+// Write a function named alternate that gets two arrays of integers and returns an array that is
+// a combination of the arrays alternating.
 public class alternatingArray {
     static int[] alternate(int[] arr1, int[] arr2) {
         int m = arr1.length, n = arr2.length;

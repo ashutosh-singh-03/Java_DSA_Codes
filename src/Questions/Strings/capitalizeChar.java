@@ -1,4 +1,6 @@
-package Practice.CoddyQuestions;// Write a function named capitalize that gets a string (only lower case) and capitalizes it.
+package Questions.Strings;
+
+// Write a function named capitalize that gets a string (only lower case) and capitalizes it.
 // For example, this is an example  ->  This Is An Example
 
 import java.util.*;

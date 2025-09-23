@@ -35,7 +35,7 @@ public class arrayList {
         System.out.println("Printing Using Nested Loop: ");
         for (List<Integer> x : arr) {
             for (Integer num : x) {
-            System.out.print(num + " ");
+                System.out.print(num + " ");
             }
             System.out.println();
         }

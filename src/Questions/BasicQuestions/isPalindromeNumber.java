@@ -1,4 +1,4 @@
-package Practice.CoddyQuestions;
+package Questions.BasicQuestions;
 
 class isPalindromeNumber {
     static boolean isPalindromeUsingString(int num) {

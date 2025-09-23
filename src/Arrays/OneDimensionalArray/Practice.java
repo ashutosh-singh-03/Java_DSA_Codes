@@ -19,8 +19,7 @@ public class Practice {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // -------------------- Task 1: Identify students with marks < 35
-        // --------------------
+        // Task 1: Identify students with marks < 35
         System.out.print("Enter the number of students: ");
         int studentCount = sc.nextInt();
 
@@ -40,8 +39,7 @@ public class Practice {
             System.out.println("None");
         }
 
-        // -------------------- Task 2: Calculate the sum and product of all elements
-        // --------------------
+        // Task 2: Calculate the sum and product of all elements
         int sum = 0;
         int product = 1;
 

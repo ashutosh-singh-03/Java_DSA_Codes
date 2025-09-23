@@ -1,4 +1,4 @@
-package Practice.CoddyQuestions;
+package Questions.Strings;
 
 public class sortedWord {
     public static String sort(String s) {

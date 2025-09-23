@@ -1,4 +1,4 @@
-package Practice.CoddyQuestions;
+package Questions.Arrays;
 
 public class rotateArrayByOne {
     static int[] rotate(int[] arr) {

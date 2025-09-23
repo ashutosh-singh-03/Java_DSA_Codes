@@ -1,4 +1,4 @@
-package Practice.CoddyQuestions;
+package Questions.Strings;
 
 import java.util.Scanner;
 

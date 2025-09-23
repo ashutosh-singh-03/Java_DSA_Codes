@@ -1,4 +1,4 @@
-package Practice.CoddyQuestions;
+package Questions.Arrays;
 
 import java.util.Arrays;
 

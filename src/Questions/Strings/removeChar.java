@@ -1,4 +1,4 @@
-package Practice.CoddyQuestions;
+package Questions.Strings;
 
 // Remove the char at index i in string
 public class removeChar {

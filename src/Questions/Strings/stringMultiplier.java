@@ -1,4 +1,4 @@
-package Practice.CoddyQuestions;
+package Questions.Strings;
 
 public class stringMultiplier {
     static String mulWordWithoutSB(String s, int n) {

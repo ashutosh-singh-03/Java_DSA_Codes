@@ -1,4 +1,4 @@
-package Practice.CoddyQuestions;
+package Questions.Strings;
 
 public class lengthsOfStrings {
     static int[] lens(String[] arr) {

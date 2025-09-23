@@ -1,4 +1,4 @@
-package Practice;
+package Basics.Loops;
 
 import java.util.*;
 

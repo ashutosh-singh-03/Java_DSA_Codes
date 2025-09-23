@@ -1,4 +1,4 @@
-package Practice;
+package Questions.BasicQuestions;
 
 import java.util.*;;
 
@@ -29,10 +29,8 @@ public class lcm {
                 divisible = true;
             }
 
-            if (divisible)
-                lcm *= i;
-            else
-                i++;
+            if (divisible) lcm *= i;
+            else i++;
 
         }
         System.out.println("LCM: " + lcm);
