@@ -2,39 +2,20 @@ package Arrays.OneDimensionalArray.PracticeQuestions;
 
 public class mergeSortedArray {
     public static void main(String[] args) {
-        int[] a = { 11, 33, 42, 71 };
-        int[] b = { 26, 54, 69, 81, 99 };
+        int[] a = {11, 33, 42, 71};
+        int[] b = {26, 54, 69, 81, 99};
 
         int[] arr = new int[a.length + b.length];
 
         int i = 0, j = 0, k = 0;
         while (i < a.length && j < b.length) {
-            if (a[i] <= b[j]) {
-                arr[k] = a[i];
-                i++;
-            } else {
-                arr[k] = b[j];
-                j++;
-            }
-            k++;
-        }
-        if (i == a.length) { // now take elements from b only
-            while (j < b.length) {
-                arr[k] = b[j];
-                j++;
-                k++;
-            }
-        }
-        if (j == b.length) { // now take elements from a only
-            while (i < a.length) {
-                arr[k] = a[i];
-                i++;
-                k++;
-            }
+            if (a[i] <= b[j]) arr[k++] = a[i++];
+            else arr[k++] = b[j++];
         }
 
-        for (int ele : arr) {
-            System.out.print(ele + " ");
-        }
+        while (j < b.length) arr[k++] = b[j++]; // now take elements from b only
+        while (i < a.length) arr[k++] = a[i++]; // now take elements from an only
+
+        for (int ele : arr) System.out.print(ele + " ");
     }
 }

@@ -35,7 +35,7 @@ public class rotateArrayByK {
 
     public static void rotateMethod2(int[] arr, int k) {
         int n = arr.length;
-        k = k % n; // to handle cases where n < k
+        k %= n; // to handle cases where n < k
         int[] temp = new int[n];
 
         // copying the last k elements to the beginning of temp

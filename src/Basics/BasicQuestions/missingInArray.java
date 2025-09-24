@@ -1,6 +1,7 @@
 package Basics.BasicQuestions;
 
-// You are given an array arr[] of size n - 1 that contains distinct integers in the range from 1 to n (inclusive). This array represents a permutation of the integers from 1 to n with one element missing. Your task is to identify and return the missing element.
+// An array arr[] of size n - 1 with distinct integers in the range 1 to n (inclusive) is given.
+// There is one number missing from the range 1 to n, return the missing number.
 public class missingInArray {
     static int missingNum(int[] arr) {
         long n = arr.length + 1;
@@ -14,7 +15,7 @@ public class missingInArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 5 };
+        int[] arr = {1, 2, 3, 5};
         System.out.print(missingNum(arr));
     }
 }

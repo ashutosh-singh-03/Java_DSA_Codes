@@ -46,8 +46,8 @@ public class wavePrint {
                     System.out.print(arr[i][j] + " ");
                 }
             } else {
-                for (int i = 0; i < m; i++) {
-                    System.out.print(arr[i][j] + " ");
+                for (int[] ints : arr) {
+                    System.out.print(ints[j] + " ");
                 }
             }
         }
@@ -55,8 +55,8 @@ public class wavePrint {
         System.out.println("\nVariation Four: ");
         for (int j = 0; j < n; j++) {
             if (j % 2 == 0) {
-                for (int i = 0; i < m; i++) {
-                    System.out.print(arr[i][j] + " ");
+                for (int[] ints : arr) {
+                    System.out.print(ints[j] + " ");
                 }
             } else {
                 for (int i = m - 1; i >= 0; i--) {
