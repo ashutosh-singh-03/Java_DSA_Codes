@@ -54,8 +54,6 @@ public class basicQuestions {
 
         // OR
         String vowels = "aeiouAEIOU";
-        if (vowels.indexOf(ch) != -1)
-            return true;
-        return false;
+        return vowels.indexOf(ch) != -1;
     }
 }
