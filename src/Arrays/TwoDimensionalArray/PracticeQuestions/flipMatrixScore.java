@@ -12,7 +12,7 @@ public class flipMatrixScore {
 
     public static void main(String[] args) {
         // We have to maximize the sum of the binary values of the matrix
-        int[][] arr = { { 0, 0, 1, 1 }, { 1, 0, 1, 0 }, { 1, 1, 0, 0 } };
+        int[][] arr = {{0, 0, 1, 1}, {1, 0, 1, 0}, {1, 1, 0, 0}};
         int m = arr.length, n = arr[0].length;
 
         System.out.println("Original Array: ");
@@ -33,8 +33,8 @@ public class flipMatrixScore {
         // flip those columns where no of 0s > 1s
         for (int j = 1; j < n; j++) {
             int zeroCount = 0;
-            for (int i = 0; i < m; i++) {
-                if (arr[i][j] == 0)
+            for (int[] ints : arr) {
+                if (ints[j] == 0)
                     zeroCount++;
 
             }
@@ -49,10 +49,10 @@ public class flipMatrixScore {
         print(arr);
 
         int score = 0;
-        for (int i = 0; i < m; i++) {
+        for (int[] ints : arr) {
             int rowValue = 0;
             for (int j = 0; j < n; j++) {
-                rowValue = rowValue * 2 + arr[i][j]; // Convert row to decimal
+                rowValue = rowValue * 2 + ints[j]; // Convert row to decimal
                 // OR
                 // rowValue += arr[i][j] * Math.pow(2, n - j - 1);
             }

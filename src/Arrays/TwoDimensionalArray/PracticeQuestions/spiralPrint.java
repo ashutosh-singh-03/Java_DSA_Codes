@@ -35,7 +35,7 @@ public class spiralPrint {
             // bottom to top
             if (min_row > max_row || min_col > max_col)
                 break;
-            for (int i = max_row; i >= min_row; i--) {
+            for (int i = max_row; i == min_row; i--) {
                 System.out.print(arr[i][min_col] + " ");
             }
             min_col++;

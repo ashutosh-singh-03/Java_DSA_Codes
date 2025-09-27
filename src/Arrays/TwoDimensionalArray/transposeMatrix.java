@@ -25,7 +25,7 @@ public class transposeMatrix {
 
         System.out.println("Transpose Of array: ");
         for (int j = 0; j < n; j++) {
-            for (int i = 0; i < m; i++) System.out.print(arr[i][j] + " ");
+            for (int[] ints : arr) System.out.print(ints[j] + " ");
             System.out.println();
         }
 

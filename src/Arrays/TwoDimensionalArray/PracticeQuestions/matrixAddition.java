@@ -2,8 +2,8 @@ package Arrays.TwoDimensionalArray.PracticeQuestions;
 
 public class matrixAddition {
     public static void main(String[] args) {
-        int[][] mat1 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-        int[][] mat2 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        int[][] mat1 = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+        int[][] mat2 = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 
         if (mat1.length != mat2.length || mat1[0].length != mat2[0].length) {
             System.out.println("Error: Matrices must have the same dimensions for addition.");
