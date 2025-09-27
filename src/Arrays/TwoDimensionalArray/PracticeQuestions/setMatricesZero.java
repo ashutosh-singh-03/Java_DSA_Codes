@@ -1,8 +1,7 @@
 package Arrays.TwoDimensionalArray.PracticeQuestions;
 
+// PS: Given an m*n integer matrix, if an element is 0, set its entire row and column to zero.
 public class setMatricesZero {
-
-    // Function to print the matrix
     public static void print(int[][] arr) {
         for (int[] row : arr) {
             for (int val : row) {
@@ -12,12 +11,8 @@ public class setMatricesZero {
         }
     }
 
-    public static void main(String[] args) {
-        // Problem Statement: Given an m*n integer matrix, if an element is 0,
-        // set its entire row and column to zero.
-
-        // -------------------- Method 1: Using a helper array --------------------
-        int[][] arr = { { 0, 1, 2, 0 }, { 3, 4, 5, 2 }, { 1, 3, 1, 5 } };
+    // Method 1: Using a helper array
+    public static void method1(int[][] arr) {
         int m = arr.length, n = arr[0].length;
 
         int[][] helper = new int[m][n];
@@ -42,11 +37,12 @@ public class setMatricesZero {
 
         System.out.println("Method 1: ");
         print(arr);
+    }
 
-        // -------------------- Method 2: Using row and column marker arrays --------------------
-        int[][] arr1 = { { 0, 1, 2, 0 }, { 3, 4, 5, 2 }, { 1, 3, 1, 5 } };
-        m = arr1.length;
-        n = arr1[0].length;
+    // Method 2: Using row and column marker arrays
+    public static void method2(int[][] arr1) {
+        int m = arr1.length;
+        int n = arr1[0].length;
 
         boolean[] row = new boolean[m];
         boolean[] col = new boolean[n];
@@ -81,17 +77,18 @@ public class setMatricesZero {
 
         System.out.println("Method 2: ");
         print(arr1);
+    }
 
-        // -------------------- Method 3: Constant Space Optimization --------------------
-        int[][] arr2 = { { 0, 1, 2, 0 }, { 3, 4, 5, 2 }, { 1, 3, 1, 5 } };
-        m = arr2.length;
-        n = arr2[0].length;
+    // Method 3: Constant Space Optimization
+    public static void method3(int[][] arr2) {
+        int m = arr2.length;
+        int n = arr2[0].length;
 
         boolean zeroRow = false, zeroCol = false;
 
         // Check if the first column contains zero
-        for (int i = 0; i < m; i++) {
-            if (arr2[i][0] == 0) {
+        for (int[] ints : arr2) {
+            if (ints[0] == 0) {
                 zeroCol = true;
                 break;
             }
@@ -147,5 +144,16 @@ public class setMatricesZero {
 
         System.out.println("Method 3: ");
         print(arr2);
+    }
+
+    public static void main(String[] args) {
+        int[][] arr1 = {{0, 1, 2, 0}, {3, 4, 5, 2}, {1, 3, 1, 5}};
+        method1(arr1);
+
+        int[][] arr2 = {{0, 1, 2, 0}, {3, 4, 5, 2}, {1, 3, 1, 5}};
+        method2(arr2);
+
+        int[][] arr3 = {{0, 1, 2, 0}, {3, 4, 5, 2}, {1, 3, 1, 5}};
+        method3(arr3);
     }
 }
