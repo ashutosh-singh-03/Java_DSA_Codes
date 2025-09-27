@@ -1,4 +1,5 @@
 package Sorting;
+
 public class checkSortedArray {
     static boolean sortedM1(int[] arr) {
         boolean isSorted = true;
@@ -22,8 +23,8 @@ public class checkSortedArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5 };
-        int[] arr1 = { 15, 2, 3, 4, 5 };
+        int[] arr = {1, 2, 3, 4, 5};
+        int[] arr1 = {15, 2, 3, 4, 5};
 
         System.out.println("Method 1");
         if (sortedM1(arr))

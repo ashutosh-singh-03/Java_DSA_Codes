@@ -37,7 +37,7 @@ public class starPyramid {
             spaces--;
             stars += 2;
         }
-        
+
         sc.close();
     }
 }

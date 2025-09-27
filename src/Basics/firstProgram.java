@@ -1,6 +1,6 @@
 package Basics;
 
-import java.util.Scanner; //to take input
+import java.util.Scanner;
 
 public class firstProgram {
     public static void main(String[] args) {

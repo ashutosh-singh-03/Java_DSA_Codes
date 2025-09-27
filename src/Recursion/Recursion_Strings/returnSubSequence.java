@@ -1,6 +1,6 @@
 package Recursion.Recursion_Strings;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public class returnSubSequence {
     static ArrayList<String> getSubSequence(String s) {
@@ -24,7 +24,7 @@ public class returnSubSequence {
             System.out.print(currSS + " ");
             return;
         }
-        
+
         char curr = s.charAt(0);
         String remString = s.substring(1);
         // if the current character chooses to come in the String

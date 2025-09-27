@@ -22,8 +22,8 @@ public class alternatingArray {
     }
 
     public static void main(String[] args) {
-        int[] a = { 1, 3, 5 };
-        int[] b = { 2, 4, 6, 8, 10 };
+        int[] a = {1, 3, 5};
+        int[] b = {2, 4, 6, 8, 10};
 
         int[] combined = alternate(a, b);
         for (int num : combined) {

@@ -3,7 +3,7 @@ package Arrays.OneDimensionalArray.PracticeQuestions;
 public class nextGreatestElement {
     public static void main(String[] args) {
         // Method 1 - Brute Force
-        int[] arr1 = { 12, 8, 41, 37, 2, 49, 16, 28, 21 };
+        int[] arr1 = {12, 8, 41, 37, 2, 49, 16, 28, 21};
         int n = arr1.length;
         int[] ans1 = new int[n];
         ans1[n - 1] = -1;
@@ -25,10 +25,10 @@ public class nextGreatestElement {
         }
 
         // Method 2 - Optimized
-        int[] arr2 = { 12, 8, 60, 37, 2, 49, 16, 28, 21 };
+        int[] arr2 = {12, 8, 60, 37, 2, 49, 16, 28, 21};
         int m = arr2.length;
         int[] ans2 = new int[m];
-        ans2[n-1] = -1;
+        ans2[n - 1] = -1;
         int nge = arr2[m - 1];
         for (int i = n - 2; i >= 0; i--) {
             ans2[i] = nge;

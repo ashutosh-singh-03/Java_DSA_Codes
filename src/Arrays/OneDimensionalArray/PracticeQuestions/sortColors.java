@@ -4,7 +4,7 @@ package Arrays.OneDimensionalArray.PracticeQuestions;
 public class sortColors {
     public static void main(String[] args) {
         // Method 1 -> two pass solution
-        int[] arr = { 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2 };
+        int[] arr = {0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2};
         int n = arr.length;
         int zeros = 0, ones = 0;
 
@@ -30,7 +30,7 @@ public class sortColors {
 
         // Method 2 - Dutch Flag Algorithm -- one pass
         // 3 pointer approach -- low, mid, high
-        int[] arr1 = { 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2 };
+        int[] arr1 = {0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2};
 
         int low = 0, mid = 0, high = n - 1;
         while (mid <= high) {

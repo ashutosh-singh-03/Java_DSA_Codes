@@ -1,6 +1,6 @@
 package Sorting.PracticeQuestions;
 
-import java.util.*;
+import java.util.Arrays;
 
 //LeetCode 169 - to return the majority element i.e. the element occurring more than n/2 times
 public class majorityElement {

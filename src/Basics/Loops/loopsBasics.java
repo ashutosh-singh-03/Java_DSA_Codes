@@ -1,6 +1,6 @@
 package Basics.Loops;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class loopsBasics {
     public static void main(String[] args) {

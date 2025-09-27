@@ -88,7 +88,7 @@ public class moveZeroes {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, -2, 3, 0, 4, 5, 0, 8 };
+        int[] arr = {1, -2, 3, 0, 4, 5, 0, 8};
         System.out.println("Original Array: ");
         print(arr);
 

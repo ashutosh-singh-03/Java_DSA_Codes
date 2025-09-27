@@ -11,7 +11,7 @@ public class lengthsOfStrings {
     }
 
     public static void main(String[] args) {
-        String[] arr = { "How", "are", "you", "Ashutosh" };
+        String[] arr = {"How", "are", "you", "Ashutosh"};
         int[] result = lens(arr);
 
         for (int i : result) {

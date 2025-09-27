@@ -61,7 +61,7 @@ public class linearSearch {
     }
 
     public static void main(String[] args) {
-        int[] a = { 1, 2, 3, 4, 5, 4, 4, 4 };
+        int[] a = {1, 2, 3, 4, 5, 4, 4, 4};
         int target = 4;
         System.out.print("Element Found: " + searchElement(a, 0, target));
         System.out.print("\nIndex: " + findFirstIndex(a, 0, target));

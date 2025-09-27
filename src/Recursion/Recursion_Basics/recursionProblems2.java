@@ -37,7 +37,7 @@ public class recursionProblems2 {
 
         // P power Q -- Approach 1
         System.out.println("P raised to the power Q: " + powerApproach1(3, 3));
-        
+
         // P power Q -- Approach 2
         System.out.println("P raised to the power Q: " + powerApproach2(3, 3));
     }

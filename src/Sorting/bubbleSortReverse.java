@@ -1,4 +1,5 @@
 package Sorting;
+
 public class bubbleSortReverse {
     public static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
@@ -31,7 +32,7 @@ public class bubbleSortReverse {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 2, 5, 7 };
+        int[] arr = {1, 2, 3, 2, 5, 7};
 
         System.out.println("Original Array: ");
         printArr(arr);

@@ -2,7 +2,7 @@ package Arrays.OneDimensionalArray.PracticeQuestions;
 
 public class sortArray01 {
     public static void main(String[] args) {
-        int[] arr = { 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1 };
+        int[] arr = {1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1};
         int n = arr.length;
 
         // -------------------- Method 1: Counting Approach --------------------
@@ -26,7 +26,7 @@ public class sortArray01 {
         printArray(arr);
 
         // -------------------- Method 2: Two Pointer Approach --------------------
-        int[] arr1 = { 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1 };
+        int[] arr1 = {1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1};
         int left = 0, right = arr1.length - 1;
 
         while (left < right) {

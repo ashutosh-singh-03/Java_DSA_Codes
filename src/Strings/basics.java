@@ -8,7 +8,7 @@ public class basics {
 
         System.out.println("Ashutosh Singh");
         // Ashu
-        char[] ch = { 'A', 's', 'h', 'u' };
+        char[] ch = {'A', 's', 'h', 'u'};
         for (char c : ch) {
             System.out.print(c);
         }

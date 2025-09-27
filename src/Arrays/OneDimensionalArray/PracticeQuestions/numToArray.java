@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class numToArray {
     static int[] convertUsingString(int n) {
         if (n == 0)
-            return new int[] { 0 };
+            return new int[]{0};
 
         String s = "" + n;
         int len = s.length();
@@ -22,7 +22,7 @@ public class numToArray {
 
     static int[] convertUsingCount(int n) {
         if (n == 0)
-            return new int[] { 0 };
+            return new int[]{0};
 
         int temp = n, count = 0;
         while (temp != 0) {

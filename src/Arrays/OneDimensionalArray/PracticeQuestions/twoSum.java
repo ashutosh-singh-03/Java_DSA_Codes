@@ -1,6 +1,7 @@
 package Arrays.OneDimensionalArray.PracticeQuestions;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class twoSum {
     public static void twoSumAllPairs(int[] arr, int target) {

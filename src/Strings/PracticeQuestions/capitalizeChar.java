@@ -3,7 +3,7 @@ package Strings.PracticeQuestions;
 // Write a function named capitalize that gets a string (only lower case) and capitalizes it.
 // For example, this is an example  ->  This Is An Example
 
-import java.util.*;
+import java.util.Scanner;
 
 class capitalizeChar {
     static String capitalize(String s) {

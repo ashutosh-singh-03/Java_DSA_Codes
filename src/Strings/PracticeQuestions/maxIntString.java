@@ -45,7 +45,7 @@ public class maxIntString {
         // System.out.println("The maximum value is: " + max);
 
         // Method 2
-        String[] arr = { "121121", "2341323", "0023254512", "34343" };
+        String[] arr = {"121121", "2341323", "0023254512", "34343"};
         String maxS = arr[0];
         for (int i = 1; i < arr.length; i++) {
             maxS = max(maxS, arr[i]);

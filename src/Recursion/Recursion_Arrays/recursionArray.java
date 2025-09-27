@@ -27,7 +27,7 @@ class recursionArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5, 5 };
+        int[] arr = {1, 2, 3, 4, 5, 5};
         printArray(arr, 0);
         System.out.print("\nMaximum Element: " + maximumElement(arr, 0));
         System.out.print("\nMinimum Element: " + minimumElement(arr, 0));

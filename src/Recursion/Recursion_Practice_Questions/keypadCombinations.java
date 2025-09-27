@@ -17,7 +17,7 @@ public class keypadCombinations {
 
     public static void main(String[] args) {
         String digits = "253";
-        String[] keyPadMap = { "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" }; // from 0 to 9
+        String[] keyPadMap = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"}; // from 0 to 9
         combinations(digits, keyPadMap, "");
     }
 }

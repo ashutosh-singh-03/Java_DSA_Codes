@@ -1,4 +1,5 @@
 package Sorting;
+
 public class optimizedBubbleSort {
     public static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
@@ -14,7 +15,7 @@ public class optimizedBubbleSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 5, 4, 3, 2, 1 };
+        int[] arr = {5, 4, 3, 2, 1};
         int n = arr.length;
 
         System.out.println("Original Array: ");

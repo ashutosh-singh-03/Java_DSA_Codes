@@ -1,6 +1,6 @@
 package Basics.Loops;
 
-import java.util.*;
+import java.util.Scanner;
 
 //if 'i' is a factor of n then 'n/i' will also be a factor of n
 public class primeComposite {

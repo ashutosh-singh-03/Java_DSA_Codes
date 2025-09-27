@@ -1,6 +1,6 @@
 package Strings;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class sortString {
     public static void main(String[] args) {
@@ -9,11 +9,11 @@ public class sortString {
         char[] ch = input.toCharArray();
 
         System.out.print("Original String: ");
-        for(char ele : ch) System.out.print(ele);
+        for (char ele : ch) System.out.print(ele);
 
         Arrays.sort(ch);
 
         System.out.print("\nSorted String: ");
-        for(char ele : ch) System.out.print(ele);
+        for (char ele : ch) System.out.print(ele);
     }
 }

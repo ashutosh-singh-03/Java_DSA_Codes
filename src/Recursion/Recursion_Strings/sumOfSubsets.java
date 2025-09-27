@@ -14,7 +14,7 @@ public class sumOfSubsets {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 2, 4, 5 };
+        int[] arr = {2, 4, 5};
         System.out.print("Subset Sum: ");
         sumSubsets(arr, 0, 0);
     }

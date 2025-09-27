@@ -1,6 +1,7 @@
 package Strings.PracticeQuestions;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class anagramString {
     public static boolean isAnagram(String s, String t) {

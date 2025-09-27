@@ -1,6 +1,6 @@
 package Basics.BasicQuestions;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class isPalindromeString {
     public static void main(String[] args) {

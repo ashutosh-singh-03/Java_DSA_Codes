@@ -1,6 +1,6 @@
 package Sorting.PracticeQuestions;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public class unionArrays {
     public static ArrayList<Integer> findUnion(int[] a, int[] b) {

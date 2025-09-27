@@ -15,7 +15,7 @@ public class frogJump {
     }
 
     public static void main(String[] args) {
-        int[] cost = { 10, 30, 40, 20 };
+        int[] cost = {10, 30, 40, 20};
         System.out.println("Minimum Cost: " + minimumCost(cost, 0));
     }
 }
