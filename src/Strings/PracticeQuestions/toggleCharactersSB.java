@@ -13,7 +13,7 @@ public class toggleCharactersSB {
 
         for (int i = 0; i < n; i++) {
             char ch = str.charAt(i);
-            int ascii = (int) ch;
+            int ascii = ch;
             if (ascii >= 65 && ascii <= 90) { // capital letter
                 ascii += 32;
             } else if (ascii >= 97 && ascii <= 122) { // capital letter
