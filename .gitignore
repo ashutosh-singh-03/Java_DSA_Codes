@@ -21,4 +21,4 @@ config.properties
 .env.local
 .env.*.local
 
-*.toml
+.deepsource.toml
