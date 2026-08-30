@@ -10,8 +10,7 @@ public class isPalindromeString {
         System.out.print("Enter the string: ");
         String input = sc.nextLine();
 
-        int left = 0;
-        int right = input.length() - 1;
+        int left = 0, right = input.length() - 1;
         boolean isPalindrome = true;
 
         while (left < right) {
@@ -23,10 +22,8 @@ public class isPalindromeString {
             right--;
         }
 
-        if (isPalindrome)
-            System.out.print(input + " is a Palindrome.");
-        else
-            System.out.print(input + " is not a Palindrome.");
+        if (isPalindrome) System.out.print(input + " is a Palindrome.");
+        else System.out.print(input + " is not a Palindrome.");
 
         sc.close();
     }

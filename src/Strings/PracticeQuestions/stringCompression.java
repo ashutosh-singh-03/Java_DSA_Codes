@@ -1,4 +1,4 @@
-package Strings.PracticeQuestions;
+// package Strings.PracticeQuestions;
 
 import java.util.Scanner;
 
@@ -13,24 +13,21 @@ public class stringCompression {
 
         int i = 0, j = 0;
         while (j < arr.length) {
-            if (arr[i] == arr[j])
-                j++;
+            if (arr[i] == arr[j]) j++;
             else {
                 ans += arr[i];
                 int len = j - i;
-                if (len > 1)
-                    ans += len;
+                if (len > 1) ans += len;
                 i = j;
             }
         }
         ans += arr[i];
         int len = j - i;
-        if (len > 1)
-            ans += len;
+        if (len > 1) ans += len;
         System.out.println("Compressed String: " + ans);
 
         sc.close();
 
-        // using stringbuilder is more efficient
+        // using string builder is more efficient
     }
 }

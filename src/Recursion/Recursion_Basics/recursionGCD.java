@@ -6,24 +6,23 @@ public class recursionGCD {
     public static int bruteGCD(int x, int y) {
         int div = Math.min(x, y);
         for (int i = div; i >= 1; i--) {
-            if (x % i == 0 && y % i == 0)
-                return i;
+            if (x % i == 0 && y % i == 0) return i;
         }
         return 1;
     }
 
     public static int iterativeGCD(int x, int y) {
-        while (x % y != 0) {
+        if (y == 0) return x;
+        while (y != 0) {
             int rem = x % y;
             x = y;
             y = rem;
         }
-        return y;
+        return x;
     }
 
     public static int recursiveGCD(int x, int y) {
-        if (y == 0)
-            return x;
+        if (y == 0) return x;
         return recursiveGCD(y, x % y);
     }
 

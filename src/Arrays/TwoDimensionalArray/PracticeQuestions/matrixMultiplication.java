@@ -3,7 +3,6 @@ package Arrays.TwoDimensionalArray.PracticeQuestions;
 import java.util.Scanner;
 
 public class matrixMultiplication {
-
     // Function to take input for a matrix
     public static void input(int[][] arr, int m, int n, Scanner sc) {
         System.out.println("Enter " + m * n + " elements:");
@@ -39,7 +38,8 @@ public class matrixMultiplication {
 
         // Check if matrix multiplication is possible
         if (n != p) {
-            System.out.println("Multiplication Not Possible. (Cols of Matrix 1 must match Rows of Matrix 2)");
+            System.out.println("Multiplication Not Possible. (Cols of Matrix 1 must match Rows " +
+                    "of Matrix 2)");
         } else {
             int[][] arr1 = new int[m][n];
             int[][] arr2 = new int[p][q];

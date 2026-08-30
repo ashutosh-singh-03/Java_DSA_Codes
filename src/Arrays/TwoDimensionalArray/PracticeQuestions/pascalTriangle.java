@@ -39,6 +39,23 @@ public class pascalTriangle {
         return arr;
     }
 
+    // Method to get a specific row
+    public static List<Integer> getRow(int rowIndex) {
+        int n = rowIndex + 1;
+        List<List<Integer>> arr = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
+            List<Integer> l = new ArrayList<>();
+            for (int j = 0; j <= i; j++) {
+                if (j == 0 || j == i) l.add(1);
+                else l.add(arr.get(i - 1).get(j) + arr.get(i - 1).get(j - 1));
+            }
+            arr.add(l);
+        }
+
+        return arr.get(rowIndex);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter n: ");
@@ -51,6 +68,10 @@ public class pascalTriangle {
         // Approach 2: Two-Pass
         System.out.println("\nPascal's Triangle (Two-Pass Method):");
         System.out.println(generateTwoPass(n));
+
+        System.out.print("\nEnter row index to fetch: ");
+        int rowIndex = sc.nextInt();
+        System.out.println("Row at index " + rowIndex + ": " + getRow(rowIndex));
 
         sc.close();
     }

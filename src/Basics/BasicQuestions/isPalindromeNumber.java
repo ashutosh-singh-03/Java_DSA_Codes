@@ -23,8 +23,7 @@ class isPalindromeNumber {
     }
 
     static boolean isPalindrome(int num) {
-        if (num < 0)
-            return false;
+        if (num < 0) return false;
 
         int original = num;
         int reversed = 0;

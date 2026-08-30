@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class palindromeString {
     static boolean isPalindrome(String s, int a, int b) {
-        if (a >= b)
-            return true;
+        if (a >= b) return true;
         return (s.charAt(a) == s.charAt(b)) && isPalindrome(s, a + 1, b - 1);
     }
 
