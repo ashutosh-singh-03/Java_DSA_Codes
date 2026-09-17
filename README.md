@@ -123,22 +123,10 @@ fundamentals to advanced DSA topics.
 
 3. **Navigate through folders** based on the topic you want to practice
 
-## 🎯 Learning Path Recommendation
-
-1. **Start with Basics** → Core programming concepts
-2. **Move to Methods** → Function understanding
-3. **Practice Patterns** → Logic building
-4. **Explore Arrays** → Data structure fundamentals
-5. **Learn Strings** → Text manipulation
-6. **Master Sorting** → Algorithm basics
-7. **Dive into Recursion** → Advanced problem solving
-
 ## 📫 Contact
 
 **Repository Owner**: Ashutosh Singh  
 **GitHub**: [@ashutosh-singh-03](https://github.com/ashutosh-singh-03)
-
-
 ---
 
 ⭐ **Star this repository** if you find it helpful for your DSA learning journey!
