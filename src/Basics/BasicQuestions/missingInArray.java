@@ -3,7 +3,7 @@ package Basics.BasicQuestions;
 // An array arr[] of size n - 1 with distinct integers in the range 1 to n (inclusive) is given.
 // There is one number missing from the range 1 to n, return the missing number.
 public class missingInArray {
-    static int missingNum(int[] arr) {
+    public static int missingNum(int[] arr) {
         long n = arr.length + 1;
         long sum = 0;
         for (int j : arr) {
